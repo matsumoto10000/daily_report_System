@@ -10,6 +10,10 @@
                 <table>
                     <tbody>
                         <tr>
+                            <th>タイトル</th>
+                            <td><c:out value="${report.title}" /></td>
+                        </tr>
+                        <tr>
                             <th>氏名</th>
                             <td><c:out value="${report.employee.name}" /></td>
                         </tr>
@@ -34,6 +38,10 @@
                             <td>
                                 <fmt:formatDate value="${report.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" />
                             </td>
+                        </tr>
+                        <tr>
+                            <th>出退勤時間</th>
+                            <td><c:out value="${report.attendance_at}" />〜<c:out value="${report.leaving_at}" /></td>
                         </tr>
                     </tbody>
                 </table>

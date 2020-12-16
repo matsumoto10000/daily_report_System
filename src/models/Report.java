@@ -61,6 +61,28 @@ public class Report {
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
+    @Column(name = "attendance_at", nullable = false)
+    private String attendance_at;
+
+    @Column(name = "leaving_at", nullable = false)
+    private String leaving_at;
+
+    public String getAttendance_at() {
+        return attendance_at;
+    }
+
+    public void setAttendance_at(String attendance_at) {
+        this.attendance_at = attendance_at;
+    }
+
+    public String getLeaving_at() {
+        return leaving_at;
+    }
+
+    public void setLeaving_at(String leaving_at) {
+        this.leaving_at = leaving_at;
+    }
+
     public Integer getId() {
         return id;
     }
